@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable";
+}
+body{
+    background-color: #F1E8DF;
+}
+header{
+    background-color: #F1E8DF;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0 10%;
+
+    transition: all 0.3s ease-in;
+}
+header.scrolled{
+    background-color: #EADCD1;
+    color: #7D0000;
+    border-bottom:1px solid #7D0000 ;
+}
+header .logo img{
+    height: 60px;
+}
+header nav{
+    display: flex;
+}
+header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #444444;
+    margin: 0 20px;
+    width: 70px;
+    padding: 15px 0;
+    text-align: center;
+}
+header nav a::after{
+    display: block;
+    border-bottom: 3px solid #4f1b08;
+    transition: transform 250ms ease-in-out;
+    left: 50%;
+    content: '';
+    transform: scaleX(0);
+}
+header nav a:hover::after{
+    transform: scaleX(1);
+}
+header .shop{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #444444;
+}
+header .shop h2{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.shop span{
+    width: 10px;
+}
+
+.wrap{
+    position: relative;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+section{
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    display: flex;
+    padding: 20vh 10vw;
+    align-items: center;
+    
+}
+.hero{
+    background-image:url(./img/hero.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+section img{
+    width: 40vw;
+}
+
+.text-box{
+    padding: 30px 10vw;
+    font-size: 15px;
+    align-items: center;
+}
+.text-box h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+.text-box h3{
+    font-size: 15px;
+    color: #7D0000;
+    margin-bottom: 30px;
+}
+.text-box p{
+    font-weight: 500;
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.text-box a{
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #7D0000;
+    display: block;
+    padding: 10px;
+    border: 2px solid #7D0000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.text-box a:hover{
+    background-color: #7D0000;
+    color: white;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
